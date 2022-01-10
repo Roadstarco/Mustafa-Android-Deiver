@@ -1,0 +1,186 @@
+{
+  "project_info": {
+    "project_number": "234677169665",
+    "project_id": "lofty-cabinet-267422",
+    "storage_bucket": "lofty-cabinet-267422.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234677169665:android:64dc2eca6dd37878309a00",
+        "android_client_info": {
+          "package_name": "com.roadstar.customerr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234677169665-a2qalvl55n94ianmjlo6k9o7ar69to3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv1H27kSGVZfJHjiE7IleEOHTIgwmW8PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234677169665-9dckgchr649tmdip2kdbqvs314l0p1na.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "234677169665-8a8h4o246bqccg1jjng7llgk4is6de2d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.myroadstar.driver"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234677169665:android:52120f40851f208d309a00",
+        "android_client_info": {
+          "package_name": "com.roadstar.customerr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234677169665-3olksa90932kj371g62u5qc9qo8avlj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roadstar.customerr",
+            "certificate_hash": "3ae0655fb0a514dfc28556fada8580cfbfa0cad0"
+          }
+        },
+        {
+          "client_id": "234677169665-vsq9khqmeqpbi262er9cfqo8tgov3lpt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roadstar.customerr",
+            "certificate_hash": "5ad1bfb653edf0f962ff164fcb12f02d13d7ce64"
+          }
+        },
+        {
+          "client_id": "234677169665-a2qalvl55n94ianmjlo6k9o7ar69to3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv1H27kSGVZfJHjiE7IleEOHTIgwmW8PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234677169665-9dckgchr649tmdip2kdbqvs314l0p1na.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "234677169665-8a8h4o246bqccg1jjng7llgk4is6de2d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.myroadstar.driver"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234677169665:android:14a33463bdf4f2a0309a00",
+        "android_client_info": {
+          "package_name": "com.roadstar.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234677169665-a2qalvl55n94ianmjlo6k9o7ar69to3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv1H27kSGVZfJHjiE7IleEOHTIgwmW8PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234677169665-9dckgchr649tmdip2kdbqvs314l0p1na.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "234677169665-8a8h4o246bqccg1jjng7llgk4is6de2d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.myroadstar.driver"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234677169665:android:032360827c94d6ec309a00",
+        "android_client_info": {
+          "package_name": "com.roadstar.driverr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234677169665-ani88q4gj89j4s3j0cehroqvu8icdtet.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roadstar.driverr",
+            "certificate_hash": "5ad1bfb653edf0f962ff164fcb12f02d13d7ce64"
+          }
+        },
+        {
+          "client_id": "234677169665-otld5hhgpt35efforbs5l5d0odgl8p10.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roadstar.driverr",
+            "certificate_hash": "3ae0655fb0a514dfc28556fada8580cfbfa0cad0"
+          }
+        },
+        {
+          "client_id": "234677169665-a2qalvl55n94ianmjlo6k9o7ar69to3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv1H27kSGVZfJHjiE7IleEOHTIgwmW8PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234677169665-9dckgchr649tmdip2kdbqvs314l0p1na.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "234677169665-8a8h4o246bqccg1jjng7llgk4is6de2d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.myroadstar.driver"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

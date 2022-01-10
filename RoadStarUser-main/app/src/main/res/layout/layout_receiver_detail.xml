@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_recv_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="center_horizontal"
+    tools:context=".app.module.ui.auth.SigninActivity">
+
+    <LinearLayout
+        android:id="@+id/lay_reg_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:background="@drawable/two_side_round_rec"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_30">
+
+        <ImageView
+            android:id="@+id/iv_recev_detail_back"
+            android:layout_width="@dimen/dimen_56"
+            android:layout_height="@dimen/dimen_56"
+            android:padding="@dimen/dimen_16"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            style="@style/text_meduim_label"
+            android:paddingVertical="@dimen/dimen_8"
+            android:text="@string/receiver_details" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_30"
+            android:layout_marginEnd="@dimen/dimen_30"
+            android:orientation="vertical">
+
+
+
+            <!-- Name-->
+
+            <TextView
+                android:id="@+id/tv_product_weight"
+                style="@style/text_meduim_label"
+                android:gravity="start"
+                android:paddingTop="@dimen/dimen_5"
+                android:text="@string/name"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="@dimen/dimen_16"/>
+
+            <EditText
+                android:id="@+id/et_receiver_name"
+                style="@style/edit_text_style"
+                android:inputType="textPersonName"
+                android:text=""
+                android:imeOptions="actionNext"
+                android:background="@null"
+                android:paddingTop="@dimen/dimen_8"
+                android:textColor="#909090"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:background="#989898" />
+
+            <!-- Phone Number-->
+
+            <TextView
+                android:id="@+id/tv_phone_numb"
+                style="@style/text_meduim_label"
+                android:gravity="start"
+                android:paddingTop="@dimen/dimen_5"
+                android:text="@string/phone_number"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="@dimen/dimen_16"/>
+
+            <EditText
+                android:id="@+id/et_receiver_phone_numb"
+                style="@style/edit_text_style"
+                android:inputType="phone"
+                android:text=""
+                android:background="@null"
+                android:paddingTop="@dimen/dimen_8"
+                android:textColor="#909090"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:background="#989898" />
+
+        </LinearLayout>
+
+        <!--        Button next-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pay"
+            style="@style/ButtonPrimary"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_0"
+            android:stateListAnimator="@null"
+            android:text="Proceed to pay" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="@dimen/dimen_100"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/orange_bg_all_round"
+        android:padding="@dimen/dimen_30"
+        android:src="@drawable/ic_package"
+        android:tint="@color/colorWhite" />
+
+</RelativeLayout>

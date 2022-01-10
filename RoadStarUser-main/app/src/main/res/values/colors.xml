@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--App Colors-->
+
+    <!--Generic Colors-->
+    <color name="windowBgColor">#ffffff</color>
+    <color name="colorBlack">#464243</color>
+    <color name="colorTitleText">#D3D3D3</color>
+    <color name="colorHintText">#D3D3D3</color>
+    <color name="color_hint_text">#99989D</color>
+    <color name="colorPrimary">#383838</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorNavBg">#3A63D2</color>
+    <color name="colorPink">#EB008B</color>
+    <color name="color_accent">#ce0029</color>
+    <color name="colorTitle">#43465d</color>
+    <color name="colorRadioInActive">#BACCCF</color>
+    <color name="colorPlaceHolderInActive">#9F9E9F</color>
+    <color name="colorRed">#EE3220</color>
+    <color name="colorPrimaryText">#404453</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="label_background">#f1f1f1</color>
+    <color name="colorVeryLightGrey">#ecebeb</color>
+    <color name="control_highlight">#1D97D5</color>
+    <color name="control_activated">#1D97D5</color>
+    <color name="text_primary_hint">#9395A2</color>
+    <color name="background">#ffffff</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="white_60_trans">#99ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ce0029</color>
+    <color name="color_orange">#DA473B</color>
+    <color name="inner_screen_bg">#FAFAFA</color>
+    <color name="color_gray">#A2A5A8</color>
+    <color name="color_transparent">#A2A5A8</color>
+    <color name="color_polyline">#DA473B</color>
+    <color name="view">#DA473B</color>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="text_xxxLarge">25sp</dimen>
+    <dimen name="text_xLarge">19.5sp</dimen>
+    <dimen name="text_large">15sp</dimen>
+    <dimen name="text_medium">13.5sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+
+    <dimen tools:override="true" name="design_navigation_icon_padding">10dp</dimen>
+    <dimen name="design_navigation_icon_size" tools:override="true">12dp</dimen>
+    <dimen tools:override="true" name="design_navigation_separator_vertical_padding">0dp</dimen>
+
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_rating"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@drawable/two_side_round_rec"
+    android:paddingBottom="@dimen/dimen_30"
+    tools:context=".app.module.ui.auth.SigninActivity">
+
+    <LinearLayout
+        android:id="@+id/lay_reg_now"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_rating_back"
+                android:layout_width="@dimen/dimen_56"
+                android:layout_height="@dimen/dimen_56"
+                android:padding="@dimen/dimen_16"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                style="@style/text_meduim_label"
+                android:layout_centerVertical="true"
+                android:text="@string/rating"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay_vechicle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <com.roadstar.customerr.common.views.VizImageView
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_100"
+                android:padding="@dimen/dimen_10"
+                app:viv_src="@drawable/ic_rating" />
+
+
+            <TextView
+                style="@style/text_meduim_label"
+                android:text="@string/your_package_has_been_delivered"
+                android:layout_marginTop="@dimen/dimen_10"/>
+            <TextView
+                style="@style/text_meduim_label"
+                android:text="@string/successfully"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/rating_bar_user"
+                style="@style/Widget.AppCompat.RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_8"
+                android:progressTint="@color/color_orange"
+                android:stepSize=".5"
+                android:rating="3"
+                android:progressBackgroundTint="@color/light_gray"
+                />
+            <TextView
+                style="@style/text_meduim_label"
+                android:text="@string/rate_the_servis" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

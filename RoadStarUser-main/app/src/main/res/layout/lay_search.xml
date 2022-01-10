@@ -1,0 +1,178 @@
+<!--Search-->
+<RelativeLayout android:id="@+id/lnrSearch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/mapfocus"
+   android:layout_margin="@dimen/dimen_10"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/frmDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dest_border_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:alpha=".40"
+            android:scaleType="fitXY"
+            android:src="@drawable/rect_shadow"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/destinationLayer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_row"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_5"
+                android:layout_height="@dimen/dimen_5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:src="@drawable/box" />
+
+            <TextView
+                android:id="@+id/destination"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_weight="0.5"
+                android:background="@null"
+                android:gravity="start|center"
+                android:hint="Where to Deliver"
+                android:maxLines="1"
+                android:paddingStart="@dimen/dimen_5"
+                android:textSize="@dimen/text_medium"
+                android:editable="false"
+                android:enabled="false"/>
+
+            <TextView
+                android:id="@+id/txtChange"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_weight="1.5"
+                android:background="@null"
+                android:gravity="start|center"
+                android:maxLines="1"
+                android:paddingStart="@dimen/dimen_5"
+                android:text="Change"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/text_medium"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sourceDestLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dimen_10"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:id="@+id/view_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/white"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_5"
+                    android:layout_height="@dimen/dimen_5"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:src="@drawable/round"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_marginBottom="@dimen/dimen_30"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_1"
+                    android:background="@color/light_gray" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_5"
+                    android:layout_height="@dimen/dimen_5"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:src="@drawable/box"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/dimen_10"
+                    android:layout_height="@dimen/dimen_60"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:src="@drawable/source_dest"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentLeft="true"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/view_layout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/frmSource"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:padding="@dimen/dimen_10"
+                        android:textSize="@dimen/text_medium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/dimen_2"
+                        android:layout_marginStart="@dimen/dimen_2"
+                        android:background="@color/light_gray" />
+
+                    <TextView
+                        android:id="@+id/frmDest"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:padding="@dimen/dimen_10"
+                        android:textSize="@dimen/text_medium" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+<View
+    android:id="@+id/search_lay_click"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50"/>
+</RelativeLayout>

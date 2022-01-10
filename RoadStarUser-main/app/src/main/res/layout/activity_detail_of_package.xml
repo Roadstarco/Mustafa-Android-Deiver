@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.module.ui.your_package.DetailOfPackage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/include3"
+            layout="@layout/toolbar" />
+
+
+        <ScrollView
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include3">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup Details"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/dimen_10"
+                    android:textSize="@dimen/dimen_20"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.6"/>
+
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="@dimen/dimen_10"
+                        android:text="Rider Full Name: "
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_rider_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="@dimen/dimen_10"
+                        android:gravity="center"
+                        android:text="@string/loading"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view33"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#BCBCBC"
+                        app:layout_constraintBottom_toTopOf="@+id/textView2"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="@dimen/dimen_10"
+                        android:gravity="center"
+                        android:text="Package Name: "
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <TextView
+                        android:id="@+id/tv_packag_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="@dimen/dimen_10"
+                        android:gravity="center"
+                        android:text="@string/loading"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_rider_name" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#BCBCBC"
+                        app:layout_constraintBottom_toTopOf="@+id/tv_package_type"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_packag_name" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="@dimen/dimen_10"
+                        android:text="Package Type: "
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                    <TextView
+                        android:id="@+id/tv_package_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="@dimen/dimen_10"
+                        android:gravity="center"
+                        android:text="@string/loading"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_packag_name" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#BCBCBC"
+                        app:layout_constraintBottom_toTopOf="@+id/tv_package_size"
+                        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                    <TextView
+                        android:id="@+id/textView233"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="@dimen/dimen_10"
+                        android:text="Package Size: "
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                    <TextView
+                        android:id="@+id/tv_package_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="@dimen/dimen_10"
+                        android:gravity="center"
+                        android:text="@string/loading"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_package_type" />
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#BCBCBC"
+                        app:layout_constraintBottom_toTopOf="@+id/textView2333"
+                        app:layout_constraintTop_toBottomOf="@+id/textView233" />
+
+                    <TextView
+                        android:id="@+id/textView2333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="@dimen/dimen_10"
+                        android:text="Provider ID: "
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView233" />
+
+                    <TextView
+                        android:id="@+id/tv_provider_ID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="@dimen/dimen_10"
+                        android:gravity="center"
+                        android:text="@string/loading"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_package_size" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#BCBCBC"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2333" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_10"
+                            android:text="Picked up: "
+                            android:textStyle="bold"
+                            android:gravity="center"/>
+
+                        <ImageView
+                            android:id="@+id/ivPicked"
+                            android:src="@drawable/placeholder_news"
+                            android:layout_gravity="center"
+                            android:layout_width="90dp"
+                            android:layout_height="70dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_10"
+                            android:text="Dropped of: "
+                            android:textStyle="bold"
+                            android:gravity="center"/>
+
+                        <ImageView
+                            android:id="@+id/ivDropped"
+                            android:src="@drawable/placeholder_news"
+                            android:layout_gravity="center"
+                            android:layout_width="90dp"
+                            android:layout_height="70dp"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup and drop off location"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/dimen_10"
+                    android:textSize="@dimen/dimen_20"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_110"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_16">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dimen_5">
+
+                        <ImageView
+                            android:id="@+id/img_start_point"
+                            android:layout_width="@dimen/dimen_16"
+                            android:layout_height="@dimen/dimen_16"
+                            android:layout_marginTop="@dimen/dimen_5"
+                            android:src="@drawable/ic_start_point" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="#A2A2A2"
+                            android:layout_below="@id/img_start_point"
+                            android:layout_above="@+id/img_end_point"
+                            android:layout_centerHorizontal="true"/>
+
+                        <ImageView
+                            android:id="@+id/img_end_point"
+                            android:layout_width="@dimen/dimen_16"
+                            android:layout_height="@dimen/dimen_16"
+                            android:src="@drawable/ic_loc"
+                            android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dimen_16">
+
+                        <TextView
+                            android:id="@+id/tv_trip_start_dest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dimen_8"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/loading"
+                            android:textSize="@dimen/text_small" />
+                        <TextView
+                            android:id="@+id/tv_trip_end_dest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/loading"
+                            android:textSize="@dimen/text_small"
+                            android:maxLines="2"
+                            android:layout_alignParentBottom="true"
+                            android:ellipsize="end"
+                            android:layout_marginTop="@dimen/dimen_8"/>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Package Status"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/dimen_10"
+                    android:textSize="@dimen/dimen_20"/>
+
+
+                <com.transferwise.sequencelayout.SequenceLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-30dp"
+                    app:progressForegroundColor="@color/red">
+
+                    <com.transferwise.sequencelayout.SequenceStep
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/approved"
+                        app:title="Approved"/>
+
+                    <com.transferwise.sequencelayout.SequenceStep
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/started"
+                        app:title="Started"/>
+
+                    <com.transferwise.sequencelayout.SequenceStep
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/arrived"
+                        app:title="Arrived"/>
+
+                    <com.transferwise.sequencelayout.SequenceStep
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pickedUp"
+                        app:title="Picked Up"/>
+
+                    <com.transferwise.sequencelayout.SequenceStep
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deliverd"
+                        app:title="Delivered"/>
+
+                    <com.transferwise.sequencelayout.SequenceStep
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rating"
+                        app:title="Rating"/>
+
+                    <com.transferwise.sequencelayout.SequenceStep
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/completed"
+                        app:title="Completed"/>
+                </com.transferwise.sequencelayout.SequenceLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnChat"
+                    android:layout_gravity="center"
+                    android:text="@string/chat"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:background="@color/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnTrack"
+                    android:layout_gravity="center"
+                    android:text="Track"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:background="@color/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/inProgressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#81000000"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:progressTint="@color/red"
+            android:theme="@style/progressBarRed"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include layout="@layout/package_dedail_bottomsheet"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

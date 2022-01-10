@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_25">
+
+            <!--Request Number-->
+            <TextView
+                style="@style/text_meduim_label"
+                android:gravity="start"
+                android:text="@string/request_number"
+                android:textSize="@dimen/text_small"
+                android:layout_marginVertical="@dimen/dimen_8"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_req_numb"
+                style="@style/edit_text_style"
+                android:layout_height="@dimen/dimen_40"
+                android:background="#F1F1F1"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingEnd="@dimen/dimen_5"
+                android:paddingBottom="@dimen/dimen_5"
+
+                android:inputType="number"
+                android:digits="01234566789"
+                android:imeOptions="actionDone"/>
+
+            <TextView
+                android:id="@+id/tv_error_req_numb"
+                style="@style/text_error_label"  />
+            <!--Info Details-->
+            <TextView
+                style="@style/text_meduim_label"
+                android:gravity="start"
+                android:text="Please fill the full information about your courier which you want to be claimed"
+                android:textSize="@dimen/text_small"
+                android:layout_marginVertical="@dimen/dimen_8"
+                android:paddingTop="@dimen/dimen_16"
+             />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_info_details"
+                style="@style/edit_text_style"
+                android:layout_height="@dimen/dimen_150"
+                android:background="#F1F1F1"
+                android:gravity="start"
+                android:paddingStart="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingEnd="@dimen/dimen_5"
+                android:paddingBottom="@dimen/dimen_5"
+                android:inputType="textMultiLine|textCapSentences"
+                android:imeOptions="actionDone"/>
+            <TextView
+                android:id="@+id/tv_error_info_detail"
+                style="@style/text_error_label" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_submit"
+                style="@style/ButtonPrimary"
+                android:layout_marginTop="@dimen/dimen_50"
+                android:stateListAnimator="@null"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

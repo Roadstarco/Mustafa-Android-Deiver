@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lay_searching"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@color/white_60_trans">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+
+
+            <com.skyfishjy.library.RippleBackground
+                android:id="@+id/ripple_anim"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/lblStatus_searching"
+                app:rb_color="@color/color_orange"
+                app:rb_radius="32dp"
+                app:rb_rippleAmount="4"
+                app:rb_duration="3000"
+                app:rb_scale="6" />
+
+            <TextView
+                android:id="@+id/lblStatus_searching"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/AfterAcceptButtonLayout"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="@dimen/dimen_10"
+                android:gravity="center"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingBottom="@dimen/dimen_5"
+                android:text="@string/finding_ride"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_medium" />
+
+            <LinearLayout
+                android:id="@+id/AfterAcceptButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:paddingHorizontal="@dimen/dimen_16">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCancelBookingSearch"
+                    style="@style/ButtonPrimary"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_0"
+                    android:layout_weight="1"
+                    android:text="@string/cancel_booking" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

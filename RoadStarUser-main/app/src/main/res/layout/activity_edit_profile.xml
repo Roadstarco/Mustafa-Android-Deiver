@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.module.ui.auth.SigninActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<!--            header-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                 >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@color/color_orange"/>
+                <!--profile img-->
+                <com.roadstar.customerr.common.views.VizImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="@dimen/header_profile_pic_size"
+                    android:layout_height="@dimen/header_profile_pic_size"
+                    android:layout_gravity="center_horizontal"
+                    app:viv_setCircular="true"
+                    app:viv_src="@drawable/profile_place_holder"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="135dp"
+                    app:viv_borderColor="@color/light_gray"
+                    app:viv_borderWidth="@dimen/dimen_1"
+                    app:viv_showBorder="true" />
+                <include layout="@layout/toolbar_transparent"
+
+                    />
+            </RelativeLayout>
+
+            <!--F/L Name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              android:layout_marginHorizontal="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/dimen_10">
+                <!--    Firs Name-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_lay_f_name"
+                    style="@style/text_input_lay"
+                    android:layout_marginStart="@dimen/dimen_0"
+                    android:layout_weight="1"
+                    android:hint="@string/first_name"
+                    app:errorIconDrawable="@null"
+                    app:boxBackgroundColor="@android:color/transparent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_f_name"
+                        style="@style/edit_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--    Last Name-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_lay_l_name"
+                    style="@style/text_input_lay"
+                    android:layout_marginEnd="@dimen/dimen_0"
+                    android:layout_weight="1"
+                    android:hint="@string/last_name"
+                    app:errorIconDrawable="@null"
+                    app:boxBackgroundColor="@android:color/transparent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_l_name"
+                        style="@style/edit_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <!--Email-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_email"
+                style="@style/text_input_lay"
+
+                android:layout_marginTop="@dimen/dimen_10"
+                android:hint="@string/email"
+                app:errorIconDrawable="@null"
+                app:boxBackgroundColor="@android:color/transparent"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_email"
+                    style="@style/edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Address-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_20">
+                <!--    Country Name-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_lay_country"
+                    style="@style/text_input_lay"
+                    android:layout_marginStart="@dimen/dimen_0"
+                    android:layout_weight="1"
+
+                    app:errorIconDrawable="@null"
+                    app:boxBackgroundColor="@android:color/transparent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_country"
+                        style="@style/edit_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/country"
+                       />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--    Address-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_lay_address"
+                    style="@style/text_input_lay"
+                    android:layout_marginStart="@dimen/dimen_0"
+                    android:layout_marginEnd="@dimen/dimen_0"
+                    android:layout_weight=".5"
+                    app:errorIconDrawable="@null"
+                    app:boxBackgroundColor="@android:color/transparent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_address"
+                        style="@style/edit_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/street_address" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!--    Setting-->
+            <TextView
+                android:id="@+id/tv_setting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                 android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginStart="@dimen/dimen_20"
+                android:layout_marginEnd="@dimen/dimen_20"
+                android:drawableStart="@drawable/ic_setting"
+                android:drawableEnd="@drawable/ic_arrow_head"
+                android:text="@string/settings"
+                android:gravity="start|center_vertical"
+                android:drawablePadding="@dimen/dimen_16"
+                android:textSize="@dimen/text_small"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save_edit"
+                style="@style/ButtonPrimary"
+                android:layout_marginTop="@dimen/dimen_50"
+                android:stateListAnimator="@null"
+                android:text="@string/update_profile" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

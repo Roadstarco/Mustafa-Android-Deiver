@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".app.module.ui.auth.SigninActivity"
+    android:background="@drawable/bg_border_filled"
+    android:padding="@dimen/dimen_16"
+    android:layout_margin="@dimen/dimen_30">
+            <LinearLayout
+                android:id="@+id/lay_reg_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_pick_up"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+
+                    android:text="@string/pickup_location"
+                    android:textSize="@dimen/text_small"
+                    android:gravity="start"
+                    android:paddingVertical="@dimen/dimen_16"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorBlack"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_drop_off"
+                    android:text="@string/drop_location"
+                    android:textSize="@dimen/text_small"
+                    android:gravity="start"
+                    android:paddingVertical="@dimen/dimen_16"/>
+            </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

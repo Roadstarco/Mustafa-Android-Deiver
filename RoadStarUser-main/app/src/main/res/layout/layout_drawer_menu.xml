@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:background="#F3F3F3">
+
+    <include layout="@layout/drawer_header" />
+
+    <ScrollView
+        android:id="@+id/scroll_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:orientation="vertical"
+        android:layout_below="@id/rl_header"
+        android:layout_above="@+id/lay_logo">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_15">
+
+                <TextView
+                    style="@style/DrawerText"
+                    android:text="@string/home" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_post_trip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/DrawerText"
+                    android:text="@string/postTrip"
+                    android:drawableStart="@drawable/ic_your_package"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_my_trip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/DrawerText"
+                    android:text="@string/myTrip"
+                    android:drawableStart="@drawable/ic_your_package"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_your_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/DrawerText"
+                    android:text="@string/your_package"
+                    android:drawableStart="@drawable/ic_baseline_shopping_bag_24"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_booking_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/DrawerText"
+                    android:text="@string/booking_history"
+                    android:drawableStart="@drawable/ic_book_history"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_available_booking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+
+                <TextView
+                    style="@style/DrawerText"
+                    android:text="@string/available_booking"
+                    android:drawableStart="@drawable/ic_ava_book"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_claim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/DrawerText"
+                    android:text="@string/claim"
+                    android:drawableStart="@drawable/ic_claim"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_payment_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/DrawerText"
+                    android:text="@string/payment_method"
+                    android:drawableStart="@drawable/ic_payment"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    style="@style/DrawerText"
+                    android:text="@string/support"
+                    android:drawableStart="@drawable/ic_support"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_Messages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/DrawerText"
+                    android:text="@string/message"
+                    android:drawableStart="@drawable/ic_outline_chat_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    style="@style/DrawerText"
+                    android:text="@string/logout"
+                    android:drawableStart="@drawable/ic_logout"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

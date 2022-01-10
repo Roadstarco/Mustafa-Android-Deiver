@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="@dimen/dimen_100"
+        android:orientation="vertical"
+        >
+
+
+        <com.roadstar.customerr.common.views.VizImageView
+            android:id="@+id/iv_attach_1"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            app:viv_borderWidth="@dimen/dimen_1"
+            app:viv_placeholder="@drawable/btn_add_photo"
+            app:viv_showBorder="true" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_remove1"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:src="@drawable/ic_remove"
+            android:layout_alignParentEnd="true"
+            android:tint="@color/color_gray"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="@dimen/dimen_100"
+        android:orientation="vertical"
+        >
+
+        <com.roadstar.customerr.common.views.VizImageView
+            android:id="@+id/iv_attach_2"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_100"
+            app:viv_placeholder="@drawable/btn_add_photo"
+            app:viv_showBorder="true"
+            app:viv_borderWidth="@dimen/dimen_1"
+            android:layout_margin="@dimen/dimen_10"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_remove2"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:src="@drawable/ic_remove"
+            android:layout_alignParentEnd="true"
+            android:tint="@color/color_gray"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="@dimen/dimen_100"
+        android:orientation="vertical"
+        >
+
+        <com.roadstar.customerr.common.views.VizImageView
+            android:id="@+id/iv_attach_3"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_100"
+            app:viv_placeholder="@drawable/btn_add_photo"
+            app:viv_showBorder="true"
+            app:viv_borderWidth="@dimen/dimen_1"
+            android:layout_margin="@dimen/dimen_10"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_remove3"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:src="@drawable/ic_remove"
+            android:layout_alignParentEnd="true"
+            android:tint="@color/color_gray"/>
+
+    </RelativeLayout>
+</LinearLayout>

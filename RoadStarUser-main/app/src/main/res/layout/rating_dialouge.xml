@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/ll_05_contentLayer_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lblProviderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/rate_your_trips"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img05User"
+                android:layout_width="@dimen/dimen_60"
+                android:layout_height="@dimen/dimen_60"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:padding="@dimen/dimen_5"
+                android:src="@drawable/profile_place_holder"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <RatingBar
+                android:id="@+id/rat05UserRating"
+                style="?attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:background="@color/white"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:progressTint="@color/red"
+                android:rating="5"
+                android:stepSize="1" />
+
+
+            <EditText
+                android:id="@+id/edt05Comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:background="@drawable/rating_comments_bg"
+                android:gravity="start"
+                android:hint="@string/write_your_comment"
+                android:lines="3"
+                android:maxLines="3"
+                android:padding="@dimen/dimen_8"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_12" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_rate"
+            style="@style/ButtonPrimary"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_0"
+            android:stateListAnimator="@null"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+</LinearLayout>

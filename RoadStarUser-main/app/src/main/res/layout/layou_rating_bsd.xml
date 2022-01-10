@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lay_rating_bsd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/two_side_round_rec"
+    android:padding="@dimen/dimen_16">
+
+    <LinearLayout
+        android:id="@+id/lay_vechicle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <com.roadstar.customerr.common.views.VizImageView
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_100"
+            android:padding="@dimen/dimen_10"
+            app:viv_src="@drawable/ic_rating" />
+
+
+        <TextView
+            style="@style/text_meduim_label"
+            android:text="@string/your_package_has_been_delivered"
+            android:layout_marginTop="@dimen/dimen_10"/>
+        <TextView
+            style="@style/text_meduim_label"
+            android:text="@string/successfully"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/rating_bar_user"
+            style="@style/Widget.AppCompat.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_8"
+            android:progressTint="@color/color_orange"
+            android:stepSize="1"
+            android:rating="3"
+            android:progressBackgroundTint="@color/light_gray"
+            />
+        <TextView
+            style="@style/text_meduim_label"
+            android:text="@string/rate_the_servis" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_review"
+            style="@style/edit_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100"
+            android:background="@drawable/bg_border_filled"
+            android:layout_marginVertical="@dimen/dimen_10"
+            android:hint="@string/write_your_review"
+            android:paddingStart="@dimen/dimen_5"
+            android:paddingEnd="@dimen/dimen_5"
+            android:paddingVertical="@dimen/dimen_5"
+            android:inputType="textMultiLine"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit_review"
+            style="@style/ButtonPrimary"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_0"
+            android:stateListAnimator="@null"
+            android:text="@string/submit" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:padding="@dimen/dimen_20"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Add Card Information"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimen_30"
+        android:paddingEnd="@dimen/dimen_30"
+        android:paddingTop="@dimen/dimen_20"
+        android:paddingBottom="@dimen/dimen_10"
+        android:text="Please enter your credit card details to proceed, read our terms and conditions here.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimen_30"
+        android:paddingEnd="@dimen/dimen_10"
+        android:paddingBottom="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_10"
+        android:text="Terms and conditions"
+        android:textColor="@color/color_accent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+    <!--        Button next-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cancel"
+        style="@style/ButtonPrimary"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_40"
+        android:onClick="onClick"
+        android:stateListAnimator="@null"
+        android:text="cancel"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/proceed"
+        app:layout_constraintTop_toBottomOf="@+id/link" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/proceed"
+        style="@style/ButtonPrimary"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_40"
+        android:onClick="onClick"
+        android:stateListAnimator="@null"
+        android:text="proceed"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/link" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

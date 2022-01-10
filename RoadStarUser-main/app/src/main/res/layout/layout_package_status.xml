@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".app.module.ui.auth.SigninActivity"
+    android:paddingVertical="@dimen/dimen_30"
+    android:background="@drawable/two_side_round_rec">
+            <LinearLayout
+                android:id="@+id/lay_reg_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_pack_status"
+                    style="@style/text_meduim_label"
+                    android:text="@string/current_status_of_your_package"
+                    android:textSize="@dimen/text_small"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_chat_old"
+                    style="@style/ButtonPrimary"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginBottom="@dimen/dimen_0"
+                    android:stateListAnimator="@null"
+                    android:text="@string/chat" />
+            </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

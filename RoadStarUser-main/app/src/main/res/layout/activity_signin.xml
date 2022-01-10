@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.module.ui.auth.SigninActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_25"
+                android:layout_marginEnd="@dimen/dimen_25"
+                android:src="@drawable/img_signin" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_email"
+                style="@style/text_input_lay"
+                android:layout_marginStart="@dimen/dimen_50"
+                android:layout_marginEnd="@dimen/dimen_50"
+                android:hint="@string/email"
+                app:errorIconDrawable="@null"
+                app:boxBackgroundColor="@android:color/transparent"
+                 >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_email"
+                    style="@style/edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                     />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_pass"
+                style="@style/text_input_lay"
+                android:layout_marginStart="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_50"
+                android:hint="@string/password"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:passwordToggleEnabled="true"
+                app:errorIconDrawable="@null">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_password"
+                    style="@style/edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_reg_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/dimen_20">
+
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:text="@string/don_t_have_an_account"
+                    android:textSize="@dimen/text_small"/>
+
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:text="@string/register"
+                    android:textColor="@color/color_orange"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/dimen_5"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_next"
+                style="@style/ButtonPrimary"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginBottom="@dimen/dimen_0"
+                android:stateListAnimator="@null"
+                android:text="@string/next" />
+
+            <TextView
+                android:id="@+id/tv_forget_pass"
+                style="@style/text_meduim_label"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/forget_password"
+                android:textColor="@color/color_orange"
+                android:textSize="@dimen/text_small"
+                android:padding="@dimen/dimen_20" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <com.facebook.login.widget.LoginButton
+                    android:visibility="gone"
+                    android:id="@+id/login_facebook_button"
+                    android:layout_width="@dimen/dimen_56"
+                    android:layout_height="@dimen/dimen_56"
+                    android:padding="@dimen/dimen_10"
+                    android:src="@drawable/img_fb"/>
+
+                <ImageView
+                    android:id="@+id/img_google"
+                    android:layout_width="@dimen/dimen_56"
+                    android:layout_height="@dimen/dimen_56"
+                    android:padding="@dimen/dimen_10"
+                    android:src="@drawable/img_google" />
+
+                <ImageView
+                    android:id="@+id/img_fb"
+                    android:layout_width="@dimen/dimen_56"
+                    android:layout_height="@dimen/dimen_56"
+                    android:padding="@dimen/dimen_10"
+                    android:src="@drawable/img_fb" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

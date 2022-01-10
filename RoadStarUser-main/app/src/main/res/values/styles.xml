@@ -1,0 +1,225 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowDisablePreview">true</item>
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <!--<item name="actionBarStyle">@style/AppTheme.ActionBar</item>-->
+        <item name="android:windowTranslucentStatus">false</item>
+
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="colorControlNormal">@color/colorHintText</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+        <item name="colorControlHighlight">@color/colorHintText</item>
+
+        <!--<item name="colorButtonNormal">@color/color_accent</item>-->
+
+        <!-- For the resting Spinner style -->
+        <item name="android:spinnerItemStyle">@style/spinnerItemStyle</item>
+
+        <item name="android:textColorHint">@color/text_primary_hint</item>
+
+        <!--For TextView Styles-->
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:windowBackground">@color/windowBgColor</item>
+
+
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:actionMenuTextColor">@color/colorTitle</item>
+        <item name="actionMenuTextColor">@color/colorTitle</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="searchViewStyle">@style/AppTheme.SearchView</item>
+        <item name="android:textColorPrimary">@color/colorTitle</item>
+    </style>
+
+    <style name="AppTheme.SearchView" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:textColorHint">@color/colorPlaceHolderInActive</item>
+    </style>
+
+
+    <style name="spinnerItemStyle">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textColor">@color/colorTitle</item>
+    </style>
+
+    <!--<style name="RadioButton">-->
+    <!--<item name="android:colorControlActivated">@color/colorButtonPrimary</item>-->
+    <!--<item name="android:colorControlNormal">@color/colorAddressFieldBg</item>-->
+    <!--<item name="android:drawable">@drawable/radio_button_selector</item>-->
+    <!--</style>-->
+
+
+    <style name="AppTheme.Progress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorPink</item>
+    </style>
+
+
+    <style name="ThemeDialog">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- set the rounded drawable as background to your bottom sheet -->
+
+    <!--Style for full screen transparent xml dialog-->
+
+    <!--New Styles-->
+    <style name="ButtonPrimary" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_marginStart">@dimen/dimen_20</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_20</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_20</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/red_border_fill</item>
+
+    </style>
+
+    <style name="ButtonSecondary" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_marginStart">@dimen/dimen_20</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_20</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_20</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/color_orange</item>
+        <item name="android:background">@drawable/red_border_hallow</item>
+
+    </style>
+    <!--Edit Text Input Layout-->
+    <style name="text_input_lay"  >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dimen_0</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10</item>
+        <item name="android:layout_marginStart">@dimen/dimen_20</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_20</item>
+        <item name="errorTextAppearance">@style/error_appearance</item>
+        <item name="android:textColorHint">@color/color_hint_text</item>
+        <item name="android:textAllCaps">true</item>
+
+    </style>
+
+
+    <!--Error Text Apperance-->
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+    <!--EditTextStyle-->
+    <style name="edit_text_style" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:gravity">left</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHighlight">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:paddingStart">@dimen/dimen_0</item>
+        <item name="android:paddingBottom">@dimen/dimen_5</item>
+        <item name="android:drawablePadding">@dimen/dimen_16</item>
+    </style>
+
+    <style name="text_meduim_label" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+    <!--My Profile Small Label-->
+    <!--Edit Profile XSmall Label-->
+    <!--EditProfile Profile Small Edit Text-->
+
+    <!--Genre Picker-->
+
+    <style name="DrawerText" parent="AppTheme">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:paddingTop">@dimen/dimen_8</item>
+        <item name="android:paddingBottom">@dimen/dimen_8</item>
+        <item name="android:drawableStart">@drawable/ic_home</item>
+        <item name="android:drawablePadding">@dimen/dimen_16</item>
+        <item name="android:gravity">start|center_vertical</item>
+    </style>
+    <style name="text_error_label" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_x_small</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:gravity">start</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+<!--    Spinner Style-->
+    <style name="spinnerStyle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/spinner_background</item>
+        <item name="android:backgroundTint">@color/color_gray</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="text_info" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/color_orange</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:visibility">gone</item>
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Mytheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textAppearance">@color/colorBlack</item>
+        <item name="colorPrimaryDark">@color/color_orange</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="colorControlNormal">#c5c5c5 </item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/color_accent</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:listPreferredItemHeightSmall">@dimen/dimen_40</item>
+        <item name="android:fontFamily">fonts/ClanPro-NarrBook.otf</item>
+    </style>
+
+    <style name="progressBarRed" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">@color/color_orange</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+    <item name="android:windowBackground">@drawable/logo_transp</item>
+    <!-- Optional, on Android 5+ you can modify the colorPrimaryDark color to match the windowBackground color for further branding-->
+    <!-- <item name="colorPrimaryDark">@android:color/white</item> -->
+    </style>
+</resources>

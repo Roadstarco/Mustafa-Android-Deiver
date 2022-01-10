@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.roadstar.customerr">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:overrideLibrary="com.mancj.materialsearchbar"
+        tools:replace="android:allowBackup">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".app.module.ui.your_package.TrackOnMapsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:label="@string/title_activity_track_on_maps" />
+        <activity android:name=".app.module.ui.your_package.DetailOfPackage" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.your_package.ListOfBidsOnTrip" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".app.internationalDelivery.InternationalTripDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".app.internationalDelivery.InternationalMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.your_package.PackageStatusHandlingFragment" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.profile.ChangePasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.chat.ChatActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.chat.MessagesActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.profile.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.booking_activity.BookingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.profile.MyProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.your_package.YourPackageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.available_booking.AvailBookingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.claim.ClaimActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.payment_method.PaymentMethodActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.support.SupportActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.booking_history.BookingHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.main.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.auth.RegistrationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.auth.VerifyOtpActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.auth.PhoneNumbAuthActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.auth.ForgetPasswordActivity" android:screenOrientation="portrait" />
+        <activity android:name=".app.module.ui.auth.SigninActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.auth.WelcomeActivity" android:screenOrientation="portrait" />
+        <activity android:name=".app.module.ui.payment_method.AddCard" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.booking_activity.CustomGooglePlacesSearch" android:screenOrientation="portrait"/>
+        <activity android:name=".app.module.ui.booking_activity.AddHomeWorkActivity" android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".app.module.ui.SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.roadstar.customerr.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <service
+            android:name=".common.Services.MyFirebaseMessagingService"
+            android:directBootAware="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".common.Services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".common.Services.BackgroundService" android:exported="true"/>
+    </application>
+
+</manifest>

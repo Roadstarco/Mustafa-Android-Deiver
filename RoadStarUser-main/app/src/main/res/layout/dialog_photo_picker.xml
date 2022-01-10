@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottomsheet_photo_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_10">
+
+    <TextView
+        android:id="@+id/tv_photo_lib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/selector_picker_dialog"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10"
+        android:text="@string/photo_library"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:background="@color/cardview_shadow_start_color" />
+
+    <TextView
+        android:id="@+id/tv_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_picker_dialog"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10"
+        android:text="@string/take_photo"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:background="@color/cardview_shadow_start_color" />
+
+    <TextView
+        android:id="@+id/cancel_dialog_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_picker_dialog"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10"
+        android:text="@string/cancel"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="14sp" />
+
+</LinearLayout>

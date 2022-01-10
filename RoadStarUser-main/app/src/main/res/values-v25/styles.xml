@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowDisablePreview">true</item>
+
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:colorSecondary">@color/colorWhite</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name = "android:windowBackground">@color/windowBgColor</item>
+        <item name="android:colorAccent">@color/colorHintText</item>
+        <item name="android:colorControlNormal">@color/color_white</item>
+        <item name="colorControlActivated">@color/colorHintText</item>
+        <item name="colorControlHighlight">@color/colorHintText</item>
+        <item name="android:colorButtonNormal">@color/colorHintText</item>
+        <item name="android:textColorHighlight">@color/colorPrimaryDark</item>
+
+        <!--<item name="android:navigationBarColor">@android:color/transparent</item>-->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/fade</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- For the resting Spinner style -->
+        <!--<item name="android:spinnerItemStyle">@style/spinnerItemStyle</item>-->
+
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:textColorHint">@color/text_primary_hint</item>
+    </style>
+    <style name="progressBarRed" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">@color/color_orange</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/logo_transp</item>
+        <!-- Optional, on Android 5+ you can modify the colorPrimaryDark color to match the windowBackground color for further branding-->
+        <!-- <item name="colorPrimaryDark">@android:color/white</item> -->
+    </style>
+</resources>

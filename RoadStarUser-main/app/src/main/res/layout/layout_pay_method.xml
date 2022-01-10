@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_pay_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="center_horizontal"
+    tools:context=".app.module.ui.auth.SigninActivity">
+
+    <LinearLayout
+        android:id="@+id/lay_reg_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:background="@drawable/two_side_round_rec"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_30">
+
+        <ImageView
+            android:id="@+id/iv_pay_back"
+            android:layout_width="@dimen/dimen_56"
+            android:layout_height="@dimen/dimen_56"
+            android:padding="@dimen/dimen_16"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            style="@style/text_meduim_label"
+            android:paddingVertical="@dimen/dimen_8"
+            android:text="@string/payment_methods" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_30"
+            android:layout_marginEnd="@dimen/dimen_30"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dimen_8"
+                android:checkedButton="@id/radio_btn_cash">
+
+                <RadioButton
+                    android:id="@+id/radio_btn_cash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/color_orange"
+                    android:gravity="start|center_vertical"
+                    android:layoutDirection="rtl"
+                    android:checked="false"
+                    android:visibility="visible"
+                    android:paddingHorizontal="@dimen/dimen_10"
+                    android:text="@string/cash" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#999999" />
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/radio_btn_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/color_orange"
+                    android:gravity="start|center_vertical"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="@dimen/dimen_10"
+                    android:text="@string/card" />
+            </RadioGroup>
+            <TextView
+                style="@style/text_meduim_label"
+                android:gravity="start"
+                android:text="@string/submit_you_card_details"
+                android:textColor="@color/colorBlack"
+                android:paddingVertical="@dimen/dimen_8"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/soft_peach_bg_all_round"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_16"
+                android:visibility="gone">
+                <!-- PIN-->
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:gravity="start"
+                    android:text="@string/pin"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/et_weight"
+                    style="@style/edit_text_style"
+                    android:background="@null"
+                    android:digits="1234567890"
+
+                    android:inputType="number"
+                    android:paddingTop="@dimen/dimen_8"
+                    android:text="@string/pin"
+                    android:textColor="#909090" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/dimen_2"
+                    android:background="#989898" />
+
+                <!-- CVV NO-->
+
+                <TextView
+                    android:id="@+id/tv_phone_numb"
+                    style="@style/text_meduim_label"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:text="@string/cvv_no"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/et_phone_numb"
+                    style="@style/edit_text_style"
+                    android:background="@null"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingTop="@dimen/dimen_8"
+                    android:text="@string/cvv_no"
+                    android:textColor="#909090" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/dimen_2"
+                    android:background="#989898" />
+                <!-- Expiry-->
+
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:text="@string/exp"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/et_expiry"
+                    style="@style/edit_text_style"
+                    android:background="@null"
+                    android:inputType="date"
+                    android:paddingTop="@dimen/dimen_8"
+                    android:text="@string/exp"
+                    android:textColor="#909090" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/dimen_2"
+                    android:background="#989898" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--        Button Sumit-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit_req"
+            style="@style/ButtonPrimary"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_0"
+            android:stateListAnimator="@null"
+            android:text="@string/submit_request" />
+        <!--        Button Sumit-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel_req"
+            style="@style/ButtonPrimary"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_0"
+            android:stateListAnimator="@null"
+            android:text="Cancel Request"
+           android:textColor="@color/colorBlack"
+            android:background="@drawable/black_border_hallow"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="@dimen/dimen_100"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/orange_bg_all_round"
+        android:padding="@dimen/dimen_30"
+        android:src="@drawable/ic_payment"
+        android:tint="@color/colorWhite" />
+
+</RelativeLayout>

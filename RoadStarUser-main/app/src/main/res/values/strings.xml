@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE
+    resources[<!ENTITY appName "RoadStar User"><!ENTITY appNameCaps "RoadStar User"><!ENTITY Provider "RoadStar Driver "><!ENTITY provider "RoadStar driver "><!ENTITY Service "Booking"><!ENTITY service "booking">]
+    >
+<resources>
+    <!--Google Keys-->
+    <string name="google_map_api">AIzaSyDxlJG_tDWMI9SxyN_irCflEn-1osT8XAo</string>
+    <!--    Ad MobID-->
+    <string name="app_id">ca-app-pub-8093828496512894~2897572994</string>
+    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <!--//FAcebook Key-->
+    <string name="app_name" translatable="false">&appName;</string>
+    <string name="error_message">There was problem processing your request, Please select pickup and drop off locations</string>
+
+    <!--    Settings-->
+    <string name="currency_unit">  $ </string>
+    <string name="distance_unit">  KM </string>
+    <string name="time_unit">  Min </string>
+    <!--Payment Fragment-->
+    <string name="payment">Payment</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="add_payments">Add Card for payments</string>
+    <string name="card_details">Card Details</string>
+    <string name="card_number">Credit/Debit Card Number</string>
+    <string name="sample_card_no" translatable="false">XXXX - XXXX - XXXX - XXXX</string>
+    <string name="month_and_year" translatable="false">MM/YY</string>
+    <string name="cvv">CVV</string>
+    <string name="add">Add Card</string>
+    <string name="enter_card_details">Card details not valid</string>
+    <string name="are_you_sure">Are you sure want to remove?</string>
+
+    <!-- others/general-->
+    <string name="none">None</string>
+    <string name="photo_library">Photo Library</string>
+    <string name="take_photo">Take photo</string>
+    <string name="cancel">Cancel</string>
+    <string name="str_open">Open</string>
+    <string name="str_close">close</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="str_account_created">Your account is successfully created.</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="password">Password</string>
+    <string name="email">Email Address</string>
+    <string name="create_account">Create Account?</string>
+    <string name="hey_your_source">Hey, Your Source</string>
+    <string name="let_s_log_in_right_now_just_put_your_nlogin_amp_password"><![CDATA[Let\'s Log In right now. Just put your\nLogin & Password]]></string>
+
+    <string name="user_name">User name length should be 30 or less</string>
+    <string name="password_length">Password length should be 8 to 20</string>
+    <string name="enter_email">Enter valid email address</string>
+    <string name="create_account_txt">Create Account</string>
+    <string name="let_s_create_account"><![CDATA[Let\'s create account right now.\nEnter your name, email & password.]]></string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="password_mismatch">Password Mismatch</string>
+    <string name="select_categories">Select Categories</string>
+    <string name="add_news">Add news</string>
+    <string name="your_can_add_news">You can add news which can be\nseen to every one who will use this\napp.</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="url_for_news_if_any">URL for news if any</string>
+    <string name="next">Next</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="my_profile">My Profile</string>
+    <string name="your_are_premium_user">Your are premium User. You can use all features of app.</string>
+    <string name="update">Update</string>
+    <string name="these_are_offical_news">These are offical news uploaded by\nchannels, all news are related to\nyour selected categories.</string>
+    <string name="these_are_news_uploaded_by_the_user">These are news uploaded by the user\nof this app (These are not\nuplaoded by any offical news\nchannel).</string>
+    <string name="auth_fail">Authentication failed.</string>
+    <string name="no_cat_selected">No Category Selected</string>
+    <string name="news_added_success">News added successfully.</string>
+    <string name="title_not_empty">Title field shouldn\'t empty</string>
+    <string name="desc_not_empty">Description field shouldn\'t empty</string>
+    <string name="error_writibg_doc">Error writing document</string>
+    <string name="profile_update_success">Profile updated successfully.</string>
+    <string name="error_getting_doc">Error getting documents:</string>
+    <string name="select_content">Select Content</string>
+    <string name="choose_the_content_type_in">Choose the content type in which\ndo you want to see the news?</string>
+    <string name="done">Done</string>
+    <string name="video">Video</string>
+    <string name="text">Text</string>
+
+    <!--<<<<<<<<<< Subscription <<<<<>>>>>>>>>>>>>-->
+    <string name="subscription_period_prompt">Select your subscription period</string>
+    <string name="subscription_resignup_prompt">To reactivate your subscription, select your subscription period</string>
+    <string name="subscription_update_prompt">To change your subscription, select your new subscription period</string>
+    <string name="subscription_period_monthly">Monthly $2.99</string>
+    <!--    <string name="subscription_period_threemonth">Three Month $4.99</string>-->
+    <!--    <string name="subscription_period_sixmonth">Six Month $6.99</string>-->
+    <!--    <string name="subscription_period_yearly">Yearly $11.99</string>-->
+    <string name="subscription_prompt_continue">Continue</string>
+    <string name="subscription_prompt_cancel">Cancel</string>
+    <string name="sign_in">SignIn</string>
+    <string name="welcome_msg">Roadstar corportion App is a ground breaking crowd delivery platform where multiple bussiness and everyone shares delivery providers to send and recive packages or goods for both local and international deliveries</string>
+    <string name="register">Register</string>
+    <string name="don_t_have_an_account">Don\'t have an Account ?</string>
+    <string name="forget_password">Forget password ?</string>
+    <string name="or">OR</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="verify_otp">verify otp</string>
+    <string name="submit">Submit</string>
+    <string name="forget_pass_msg">Don\'t worry! Just enter your email ID below and we\'ll send you the password instructions.</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <!--Bottom Navigation bar Strings-->
+    <string name="notification">Notification</string>
+    <string name="post">Post</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+    <string name="home">Home</string>
+    <string name="your_package">Track Package</string>
+    <string name="booking_history">Booking History</string>
+    <string name="available_booking">Available Booking</string>
+    <string name="claim">Claim</string>
+    <string name="support">Support</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="local_delivery">Local Delivery</string>
+    <string name="international_delivery">International Delivery</string>
+    <string name="road_star">RoadStar</string>
+    <string name="dummy_date_time">Sat, 11 Jul, 10:30 AM</string>
+    <string name="dummy_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</string>
+    <string name="dummy_address">House 722, street 20, kamalabad, Rawlpindi, Pakistan</string>
+    <string name="str_no_history">Sorry! No History Available</string>
+    <string name="request_number">Request Number</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="field_empty">Field empty</string>
+    <string name="chat">chat</string>
+    <string name="current_status_of_your_package">Current status of your package</string>
+    <string name="notifications">Notifications</string>
+    <string name="change_password">Change Password</string>
+    <string name="settings">Settings</string>
+    <string name="save">Save</string>
+    <string name="new_password">New Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to Logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="drop_location">Drop Location</string>
+    <string name="cycle">cycle</string>
+    <string name="scooter">Scooter</string>
+    <string name="car">Car</string>
+    <string name="package_details">Package Details</string>
+    <string name="product_weight">Product Weight</string>
+    <string name="product_width">Product Width</string>
+    <string name="product_height">Product Height</string>
+    <string name="attach_photo">Attach Photo</string>
+    <string name="receiver_details">Receiver Details</string>
+    <string name="name">Name</string>
+    <string name="dummy_name">John Doe</string>
+    <string name="dummy_phone">+92334559886</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="cash">Cash</string>
+    <string name="card">Card</string>
+    <string name="pin">PIN</string>
+    <string name="cvv_no">CVV NO</string>
+    <string name="exp">EXP</string>
+    <string name="submit_you_card_details">Submit You Card Details</string>
+    <string name="submit_request">Submit Request</string>
+    <string name="cancel_request">Cancel Request ?</string>
+    <string name="are_you_sure_you_want_to_ncancel_the_reqesut">Are you sure you want to\ncancel the reqesut?</string>
+    <string name="request_accepted">Request Accepted</string>
+    <string name="req_accpt_msg">Your request has been\nSuccessfully Accepted by Driver</string>
+    <string name="rating">Rating</string>
+    <string name="successfully">successfully</string>
+    <string name="rate_the_servis">Rate the Service</string>
+    <string name="your_package_has_been_delivered">your package has been delivered</string>
+
+
+    <!--    Otp Messages-->
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="verify">Verify</string>
+    <string name="code_sent">Code Sent</string>
+    <string name="verif_fail">Verification Failed.</string>
+    <string name="verif_comp">Verification Completed.</string>
+    <string name="error_otp">Enter otp code</string>
+
+
+    <!-- Waiting for provider -->
+    <string name="looking_for_ride">Finding &Service;....</string>
+    <string name="cancel_ride">Cancel &service;</string>
+
+    <string name="cancel_ride_alert">Are you sure want to cancel the &service;?</string>
+    <string name="no_providers_found">No one found at the moment to take your &service;, Please try after sometime</string>
+    <string name="no_drivers_found">No drivers available to take your trip</string>
+    <string name="driver_busy">Your trip was cancelled by the driver.Please contact us for support</string>
+    <string name="retry">Retry Now</string>
+    <string name="try_later">Later</string>
+
+
+    <!--Driver Accepted-->
+    <string name="cancel_trip">Cancel Trip</string>
+    <string name="surge_pricing">Due to peak hours, charges will be vary based on availability of providers</string>
+    <string name="pickup_drop">Please enter both pickup and drop locations</string>
+    <string name="arriving">&Provider; accepted your request.</string>
+
+    <!--    Driver Arrived-->
+    <string name="arrived">Our Driver is arrived at your location</string>
+
+    <!--    Picked up-->
+    <string name="picked_up">Your ride is started</string>
+    <string name="share">Share</string>
+    <!--    Dropped-->
+    <string name="dropped">Your ride is completed</string>
+
+    <!--    Error Messages-->
+    <!-- Error Messages-->
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="something_went_wrong_net">Something went wrong, Please check internet connection</string>
+    <string name="oops_connect_your_internet">Oops ! Connect your Internet</string>
+    <string name="server_down">Unable to reach server</string>
+    <string name="please_try_again">Please try again</string>
+    <string name="email_validation">Enter your email ID</string>
+    <string name="not_valid_email">Not a valid email ID</string>
+    <string name="password_validation">Password could not be left empty</string>
+    <string name="first_name_empty">First name required</string>
+    <string name="last_name_empty">Last name required</string>
+    <string name="mobile_number_empty">Mobile number required</string>
+    <string name="mobile_number_validation">Mobile number must have numbers between 10 to 20 digits</string>
+    <string name="your_cards">Your Cards</string>
+    <string name="enter_details_register">Enter your details to register</string>
+    <string name="fb_cancel">Facebook login cancelled</string>
+    <string name="fb_error">Facebook login failed</string>
+    <string name="google_login">Google login failed</string>
+    <string name="social_cancel">Social login cancelled</string>
+    <string name="registration_failed">Registration cancelled</string>
+    <string name="error_username_length">User name length should 0-30 characters</string>
+    <string name="error_invalid_email">Email invalid</string>
+    <string name="error_tos">Please agree with our terms and conditions</string>
+    <string name="error_enter_pass">Please enter password</string>
+    <string name="error_confirm_pass">Please confirm password</string>
+    <string name="error_pass_mis_match">Password mismatch</string>
+    <string name="error_phone_numb">Invalid phone number</string>
+    <string name="error_field_empty">Field empty</string>
+    <string name="error_invalid_otp">Invalid Otp</string>
+    <string name="start_chat">Start Chat</string>
+    <string name="str_inbox">Inbox</string>
+    <string name="str_chat_with_user">Chat with users</string>
+    <string name="person">Person</string>
+    <string name="update_password">Update Password</string>
+    <string name="str_phone_numb">Enter the 6 digit code send to you\nAT %s</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="street_address">Street Address</string>
+    <string name="country">Country</string>
+    <string name="profile_update_succ">Profile updated successfully.</string>
+    <string name="pass_update_success">Password Updated</string>
+    <string name="something_wrong">Something went wrong</string>
+    <string name="estimated_fare">Estimated Fare:</string>
+    <string name="total_distance">Total Distance:</string>
+
+    <string name="please_wait">Please wait...</string>
+    <string name="job_already_in_progress">Job Already in progress</string>
+    <string name="no_booking_history_available">No booking history available</string>
+    <string name="surcharge_s">Surcharge %d</string>
+    <string name="req_cancel">Request Cancelled</string>
+    <string name="cancel_booking">Cancel Booking</string>
+    <string name="finding_ride">Finding Ride...</string>
+    <string name="write_your_review">Write your review....</string>
+    <string name="write_cancellation_reason">Write cancellation reason...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="field_empty_or_invalid">field empty or invalid</string>
+    <string name="no_bids_available">No Bids Available</string>
+    <string name="status_activity_title">Package status</string>
+    <string name="space"> \u0020 </string>
+    <string name="rate_your_trips">Rate your experience</string>
+    <string name="write_your_comment">write your comment</string>
+    <string name="loading">Loading..</string>
+    <string name="add_bid">Add Bid</string>
+    <string name="view_bid">view bid</string>
+    <string name="current_status">Current status</string>
+    <string name="provider_id">Provider ID :</string>
+    <string name="International_delivery_title">Internation Delivery</string>
+    <string name="counter_offer_details">Counter offer detail</string>
+    <string name="Accept">Accept</string>
+    <string name="Reject">Reject</string>
+    <string name="bids">Bids</string>
+    <string name="Packages">Packages</string>
+    <string name="your_counter_offer_off">\"your Counter Offer of \"</string>
+    <string name="has_been_sent">\" has been  Sent successfully And waiting for approval\"</string>
+    <string name="reciever_name">Reciever name :</string>
+    <string name="add_bid_amount">Add bid amount</string>
+    <string name="request_sent_text">request sent</string>
+    <string name="api_key">AIzaSyDxlJG_tDWMI9SxyN_irCflEn-1osT8XAo</string>
+    <string name="postTrip">Post a trip</string>
+    <string name="myTrip">My trips</string>
+
+    <string name="facebook_app_id">245222870943616</string>
+    <string name="fb_login_protocol_scheme">fb[APP_ID]</string>
+    <string name="subject">Subject</string>
+    <string name="message">Messages</string>
+    <string name="Send_message">Send</string>
+    <string name="no_request_found">No request found</string>
+    <string name="termConditionLink">https://myroadstar.org/terms_and_conditions</string>
+    <string name="title_activity_track_on_maps">TrackOnMapsActivity</string>
+
+</resources>
